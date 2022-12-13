@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NODE_OPTIONS: '--max_old_space_size=8192'
-    # container:
-    # image: owasp/zap2docker-stable
-    # options: --user root
+    container:
+      image: owasp/zap2docker-stable
+      options: --user root
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
