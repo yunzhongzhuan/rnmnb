@@ -18,7 +18,7 @@ jobs:
     env:
       NODE_OPTIONS: '--max_old_space_size=8192'
     container:
-      image: owasp/zap2docker-stable
+      # image: owasp/zap2docker-stable
       options: --user root
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,3 +34,6 @@ jobs:
           echo test, and deploy your project.
           curl -X GET "https://speed.cloudflare.com/__down?bytes=1024" -o /root/1024.bin
           touch /root/text.txt
+          cd /root/ && ls
+          ls
+          pwd
